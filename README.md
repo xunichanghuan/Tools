@@ -9,5 +9,5 @@
 
 ## rclone-auto-start.sh rclone-auto-upload.sh
 ```
-wget -O rcloned https://raw.githubusercontent.com/xunichanghuan/Tools/master/aria2-auto-start.sh && chmod +x aria2-auto-start.sh && bash aria2-auto-start.sh
+wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/aria2-auto-start.sh && chmod +x aria2-auto-start.sh && bash aria2-auto-start.sh
 ```
