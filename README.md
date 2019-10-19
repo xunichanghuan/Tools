@@ -8,7 +8,7 @@
 
 
 ## rclone-auto-start.sh
-cd ~ && wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/rclone-auto-start.sh && chmod +x rclone-auto-start.sh && bash rclone-auto-start.sh start
+cd ~ && wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/rclone-auto-start.sh && move rclone-auto-start.sh /etc/init.d/rcloned chmod +x /etc/init.d/rcloned && update-rc.d -f rcloned defaults && bash /etc/init.d/rcloned start
 
 ## rclone-auto-upload.sh
 cd ~ && wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/rclone-auto-upload.sh && chmod +x rclone-auto-upload.sh && nano .aria2/aria2.conf 
