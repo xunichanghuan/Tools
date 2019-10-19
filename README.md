@@ -5,3 +5,11 @@
 本脚本也适用于AWS EC2/Lightsail, AZURE。。。。
 
 创建实例时，点击添加启动脚本，复制下面代码，然后等待实例开通。
+
+
+## rclone-auto-start.sh
+
+
+## rclone-auto-upload.sh
+chmod +x rclone-auto-upload.sh
+然后再到Aria2配置文件中加上一行on-download-complete=/root/rclone-auto-upload.sh即可，后面为脚本的路径。最后重启Aria2生效。
