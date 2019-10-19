@@ -8,8 +8,9 @@
 
 
 ## rclone-auto-start.sh
-
+cd ~ && wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/rclone-auto-start.sh && chmod +x rclone-auto-start.sh && bash rclone-auto-start.sh start
 
 ## rclone-auto-upload.sh
-chmod +x rclone-auto-upload.sh
+cd ~ && wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/rclone-auto-upload.sh && chmod +x rclone-auto-upload.sh && nano .aria2/aria2.conf 
+
 然后再到Aria2配置文件中加上一行on-download-complete=/root/rclone-auto-upload.sh即可，后面为脚本的路径。最后重启Aria2生效。
