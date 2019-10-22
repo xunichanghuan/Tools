@@ -15,7 +15,7 @@ NAME_BIN="rclone"
 
 NAME="GoogleDrive" #rclone name名
 REMOTE='' #远程文件夹
-LOCAL='/GoogleDrive/' #挂载地址
+LOCAL='/GoogleDrive' #挂载地址
 
 Green_font_prefix="\033[32m" && Red_font_prefix="\033[31m" && Green_background_prefix="\033[42;37m" && Red_background_prefix="\033[41;37m" && Font_color_suffix="\033[0m"
 Info="${Green_font_prefix}[信息]${Font_color_suffix}"
