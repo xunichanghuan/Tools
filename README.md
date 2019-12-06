@@ -24,6 +24,7 @@ wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/aria2-auto-
 ## 1、安装rclone
 
 ```wget https://www.moerats.com/usr/shell/rclone_debian.sh && bash rclone_debian.sh```
+
 ## 2、初始化配置
 
 ```rclone config```
@@ -33,11 +34,13 @@ wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/aria2-auto-
 #新建本地文件夹，路径自己定，即下面的LocalFolder
 ```mkdir /GoogleDrive```
 #挂载为磁盘，下面的DriveName、Folder、LocalFolder参数根据说明自行替换
+
 ```rclone mount DriveName:Folder LocalFolder --copy-links --no-gzip-encoding --no-check-certificate --allow-other --allow-non-empty --umask 000```
+
 DriveName为初始化配置填的name，Folder为Google Drive里的文件夹，LocalFolder为VPS上的本地文件夹。
 
 挂载成功后，输入df -h命令查看即可！
-请输入图片描述
+
 ## 4、卸载磁盘
 
 ```fusermount -qzu LocalFolder```
@@ -66,10 +69,11 @@ EOF
 ```
 开始启动：
 ```systemctl start rclone```
+
 设置开机自启：
 ```systemctl enable rclone```
-其他命令：
 
+其他命令：
 重启：```systemctl restart rclone```
 停止：```systemctl stop rclone```
 状态：```systemctl status rclone```
