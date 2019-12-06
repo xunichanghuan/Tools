@@ -18,6 +18,7 @@ wget -N https://raw.githubusercontent.com/xunichanghuan/Tools/master/aria2-auto-
 本教程只适用Debian/Ubuntu系统，如果你是CentOS或者其它Linux系统，请使用以下命令安装rclone：
 
 ```curl https://rclone.org/install.sh | sudo bash```
+
 初始化配置和挂载方法和下面一样，开机自启可参考该教程→传送门。
 
 # 安装
