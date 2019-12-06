@@ -74,7 +74,11 @@ EOF
 ```systemctl enable rclone```
 
 其他命令：
+
 重启：```systemctl restart rclone```
+
 停止：```systemctl stop rclone```
+
 状态：```systemctl status rclone```
+
 如果你想挂载多个网盘，那么将systemd配置文件的rclone.service改成rclone1.service即可，重启动什么的同样换成rclone1。
