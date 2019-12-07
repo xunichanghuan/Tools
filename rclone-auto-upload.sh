@@ -1,7 +1,7 @@
 #!/bin/bash
 path="$3" #取原始路径，我的环境下如果是单文件则为/data/demo.png,如果是文件夹则该值为文件夹内某个文件比如/data/a/b/c/d.jpg
 downloadpath='/Download/' #下载目录
-rclone='/GoogleDrive/'   #rclone挂载的目录
+rclone='/GoogleDrive/Download/'   #rclone挂载的目录
 
 if [ $2 -eq 0 ] #下载文件为0跳出脚本
         then
